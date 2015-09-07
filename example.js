@@ -140,3 +140,45 @@ for (var i = 0; i < days.length; i++){
 }
 
 
+var myObj = {}
+
+var topGun = {
+
+	title : 'Top Gun',
+	genre : 'Historical autobiography',
+	rating : 6.8,
+	year: 1986,
+	//three properties on the variable topGun
+}
+
+	for ( var key in topGun) {
+
+		console.log(key)
+	}
+
+	for ( var key in topGun) {
+
+		console.log(topGun[key])
+	}
+
+	for ( var key in topGun) {
+
+		console.log('The ' + key + ' of the movie is ' + topGun[key])	
+	}
+var which = prompt('Which property do you want to know about?')
+console.log(topGun[which])
+//if you put in a make-up value in the prompt, js will return undefined
+
+
+var meanGirls = {
+	rating : 'fetch',
+	genre : 'inspirational documentary',
+	year: 'not important',
+	title: 'Mean Girls'
+
+}
+
+var movies = []
+movies.push(topGun)
+movies.push(meanGirls)
+console.log(movies)
